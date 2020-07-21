@@ -1,18 +1,14 @@
 import React from 'react';
-import Header from "./components/Header/Header";
-import Card from "./components/Card";
 import EmployeeDirectory from "./components/EmployeeDirectory"
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <EmployeeDirectory />
+    <EmployeeDirectory />
+  );
 
-    </div>
-  )
+
   // (
   //   <div className="App">
   //     <header className="App-header">
@@ -32,7 +28,6 @@ function App() {
   //     </header>
   //   </div>
   // );
-
 }
 
 export default App;
