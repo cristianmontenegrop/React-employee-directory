@@ -15,7 +15,7 @@ function SearchBar(props) {
                 className="container form-control col-3"
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default"
-                alt="Search" placeholder="Search" />
+                alt="Search" placeholder="Search by Name, Phone, Email or DOB" />
         </div>
     );
 }

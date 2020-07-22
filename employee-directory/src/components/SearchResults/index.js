@@ -13,7 +13,7 @@ function SearchResults(props) {
       return data;
     } else if (data.phone.toLowerCase().includes(props.search.toLowerCase())) {
       return data;
-    } else if (data.dob.toLowerCase().includes(props.search.toLowerCase())) {
+    } else if (data.dob.date.toLowerCase().slice(0, 10).includes(props.search.toLowerCase())) {
       return data;
     }
 

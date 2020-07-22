@@ -1,5 +1,5 @@
 import React from "react";
-
+import FontAwesome from 'react-fontawesome';
 
 function Title(props) {
 
@@ -22,10 +22,10 @@ function Title(props) {
                         </a>
                         <div className="btn-group-vertical">
                             <button onClick={() => props.onClick("sortNameAsc")} className="btn btn-xs btn-link p-0">
-                                <span className="fas fa-sort-up"></span>
+                                <FontAwesome className="fas fa-sort-up"></FontAwesome>
                             </button>
                             <button onClick={() => props.onClick("sortNameDesc")} className="btn btn-xs btn-link p-0">
-                                <span className="fas fa-sort-down"></span>
+                                <FontAwesome className="fas fa-sort-down"></FontAwesome>
                             </button>
                         </div>
                     </div>
@@ -43,10 +43,10 @@ function Title(props) {
                         </a>
                         <div className="btn-group-vertical">
                             <button onClick={() => props.onClick("sortEmailAsc")} className="btn btn-xs btn-link p-0">
-                                <span className="fas fa-sort-up"></span>
+                                <FontAwesome className="fas fa-sort-up"></FontAwesome>
                             </button>
                             <button onClick={() => props.onClick("sortEmailDesc")} className="btn btn-xs btn-link p-0">
-                                <span className="fas fa-sort-down"></span>
+                                <FontAwesome className="fas fa-sort-down"></FontAwesome>
                             </button>
                         </div>
                     </div>
@@ -61,10 +61,10 @@ function Title(props) {
                         </a>
                         <div className="btn-group-vertical">
                             <button onClick={() => props.onClick("sortDOBAsc")} className="btn btn-xs btn-link p-0">
-                                <span className="fas fa-sort-up"></span>
+                                <FontAwesome className="fas fa-sort-asc" ara-hidden="true"></FontAwesome>
                             </button>
                             <button onClick={() => props.onClick("sortDOBDesc")} className="btn btn-xs btn-link p-0">
-                                <span className="fas fa-sort-down"></span>
+                                <FontAwesome className="fas fa-sort-desc"></FontAwesome>
                             </button>
                         </div>
                     </div>
