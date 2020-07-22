@@ -1,6 +1,7 @@
 import React from "react";
 
-function Title() {
+
+function Title(props) {
 
     return (
 
@@ -8,20 +9,65 @@ function Title() {
             <hr className="mt-2 mb-3" />
             <div className="row">
 
-                <div className="text-center col-2">
+                <a className="text-center col-2">
                     Image
-                </div>
-                <div className="text-center col-2">
+                </a>
+                {/* <div className="text-center col-2">
                     Name
-                </div>
+                </div> */}
                 <div className="text-center col-2">
+                    <div className="btn-group" role="group">
+                        <a className="btn btn-xs btn-link py-0 pl-0 pr-1">
+                            Name
+                        </a>
+                        <div className="btn-group-vertical">
+                            <button onClick={() => props.onClick("sortNameAsc")} className="btn btn-xs btn-link p-0">
+                                <span className="fas fa-sort-up"></span>
+                            </button>
+                            <button onClick={() => props.onClick("sortNameDesc")} className="btn btn-xs btn-link p-0">
+                                <span className="fas fa-sort-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <a className="text-center col-2">
                     Phone
-                </div>
-                <div className="text-center col-4">
+                </a>
+                {/* <a className="text-center col-4">
                     Email
+                </a> */}
+                <div className="text-center col-4">
+                    <div className="btn-group" role="group">
+                        <a className="btn btn-xs btn-link py-0 pl-0 pr-1">
+                            Email
+                        </a>
+                        <div className="btn-group-vertical">
+                            <button onClick={() => props.onClick("sortEmailAsc")} className="btn btn-xs btn-link p-0">
+                                <span className="fas fa-sort-up"></span>
+                            </button>
+                            <button onClick={() => props.onClick("sortEmailDesc")} className="btn btn-xs btn-link p-0">
+                                <span className="fas fa-sort-down"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div className="text-center col-2">
+                {/* <a className="text-center col-2">
                     DOB
+                </a> */}
+                <div className="text-center col-2">
+                    <div className="btn-group" role="group">
+                        <a className="btn btn-xs btn-link py-0 pl-0 pr-1">
+                            DOB
+                        </a>
+                        <div className="btn-group-vertical">
+                            <button onClick={() => props.onClick("sortDOBAsc")} className="btn btn-xs btn-link p-0">
+                                <span className="fas fa-sort-up"></span>
+                            </button>
+                            <button onClick={() => props.onClick("sortDOBDesc")} className="btn btn-xs btn-link p-0">
+                                <span className="fas fa-sort-down"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr className="mt-2 mb-3" />

@@ -13,7 +13,7 @@ function SearchResults(props) {
       return data;
     } else if (data.phone.toLowerCase().includes(props.search.toLowerCase())) {
       return data;
-    } else if (data.dob.date.toLowerCase().includes(props.search.toLowerCase())) {
+    } else if (data.dob.toLowerCase().includes(props.search.toLowerCase())) {
       return data;
     }
 
@@ -31,7 +31,7 @@ function SearchResults(props) {
               <img alt="Employee" src={result.picture.large} className="img-fluid" />
               {/* </div> */}
               <div className="text-center col-2">
-                {result.name.title} {result.name.first} {result.name.last}
+                {result.name.first} {result.name.last}
               </div>
               <div className="text-center col-2">
                 {result.phone}
