@@ -11,7 +11,7 @@ class EmployeeDirectory extends Component {
 
     state = {
         directory: [],
-        search: ""
+        search: null
     };
 
     componentDidMount() {
@@ -32,6 +32,7 @@ class EmployeeDirectory extends Component {
     };
 
     render() {
+        console.log(this.state.directory)
         return (
             <div>
                 <Header />
@@ -40,6 +41,7 @@ class EmployeeDirectory extends Component {
                 />
                 <Title />
                 < SearchResults
+                    search={this.state.search}
                     directory={this.state.directory}
                 />
             </div>

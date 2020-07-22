@@ -2,10 +2,26 @@ import React from "react";
 import "./style.css";
 
 function SearchResults(props) {
+  const newDirectory = props.directory.filter(data => {
+    if (props.search === null) {
+      return data;
+    } else if (data.name.first.toLowerCase().includes(props.search.toLowerCase())) {
+      return data;
+    } else if (data.name.last.toLowerCase().includes(props.search.toLowerCase())) {
+      return data;
+    } else if (data.email.toLowerCase().includes(props.search.toLowerCase())) {
+      return data;
+    } else if (data.phone.toLowerCase().includes(props.search.toLowerCase())) {
+      return data;
+    } else if (data.dob.date.toLowerCase().includes(props.search.toLowerCase())) {
+      return data;
+    }
+
+  })
 
   return (
     <ul className="list-group search-results">
-      {props.directory.map(result => (
+      {newDirectory.map(result => (
         <li key={result.email} className="list-group-item">
           <div className="container mw-100">
             <hr className="mt-2 mb-3" />
