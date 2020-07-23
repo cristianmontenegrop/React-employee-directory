@@ -24,12 +24,9 @@ function SearchResults(props) {
       {newDirectory.map(result => (
         <li key={result.email} className="list-group-item">
           <div className="container mw-100">
-            <hr className="mt-2 mb-3" />
             <div className="row">
 
-              {/* <div className="col-2"> */}
               <img alt="Employee" src={result.picture.large} className="img-fluid" />
-              {/* </div> */}
               <div className="text-center col-2">
                 {result.name.first} {result.name.last}
               </div>
@@ -43,7 +40,6 @@ function SearchResults(props) {
                 {result.dob.date.slice(0, 10)}
               </div>
             </div>
-            <hr className="mt-2 mb-3" />
           </div>
 
         </li>

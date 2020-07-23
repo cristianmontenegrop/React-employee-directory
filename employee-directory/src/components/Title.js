@@ -12,9 +12,6 @@ function Title(props) {
                 <a className="text-center col-2">
                     Image
                 </a>
-                {/* <div className="text-center col-2">
-                    Name
-                </div> */}
                 <div className="text-center col-2">
                     <div className="btn-group" role="group">
                         <a className="btn btn-xs btn-link py-0 pl-0 pr-1">
@@ -33,9 +30,6 @@ function Title(props) {
                 <a className="text-center col-2">
                     Phone
                 </a>
-                {/* <a className="text-center col-4">
-                    Email
-                </a> */}
                 <div className="text-center col-4">
                     <div className="btn-group" role="group">
                         <a className="btn btn-xs btn-link py-0 pl-0 pr-1">
@@ -51,9 +45,6 @@ function Title(props) {
                         </div>
                     </div>
                 </div>
-                {/* <a className="text-center col-2">
-                    DOB
-                </a> */}
                 <div className="text-center col-2">
                     <div className="btn-group" role="group">
                         <a className="btn btn-xs btn-link py-0 pl-0 pr-1">
@@ -72,13 +63,6 @@ function Title(props) {
             </div>
             <hr className="mt-2 mb-3" />
         </div>
-
-        // <div className="input-group mb-3">
-        //     <div className="input-group-prepend">
-        //         <span className="input-group-text" id="inputGroup-sizing-default">Default</span>
-        //     </div>
-        //     <input type="text" className="form-control col-4" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-        // </div>
     );
 }
 

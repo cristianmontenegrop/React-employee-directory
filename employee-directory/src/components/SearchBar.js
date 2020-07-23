@@ -4,10 +4,7 @@ import '../App.css';
 function SearchBar(props) {
 
     return (
-        <div className="input-group mb-3">
-            <div className="input-group-prepend">
-                {/* <span className="input-group-text" id="inputGroup-sizing-default">Default</span> */}
-            </div>
+        <div className="input-group mb-4">
             <input
                 type="text"
                 value={props.search}

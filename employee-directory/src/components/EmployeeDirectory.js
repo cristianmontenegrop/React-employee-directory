@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import SearchBar from "./SearchBar";
 import Header from "./Header";
-import Card from "./Card";
 import SearchResults from "./SearchResults";
 import Title from "./Title";
 
@@ -85,8 +84,6 @@ class EmployeeDirectory extends Component {
         }
 
         this.setState({ sort: e });
-
-
     }
 
     fetchDirectory = () => {
@@ -115,8 +112,6 @@ class EmployeeDirectory extends Component {
             </div>
         );
     }
-
 };
-
 
 export default EmployeeDirectory;
